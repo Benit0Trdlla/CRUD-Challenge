@@ -1,0 +1,22 @@
+{
+  "name": "challenges-ensolvers-tridella",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cd backend && nodemon app.js",
+    "start-backend": "cd backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.7.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}

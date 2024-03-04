@@ -1,0 +1,206 @@
+body {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+/* .body-container {
+    /* height: 100%; */
+    /* overflow-y: scroll; */
+/* }  */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    z-index: 2;
+}
+
+.navbar-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    z-index: 1;
+}
+
+.form-container.open {
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-container input[type="submit"],
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* justify-content: space-between; */
+    display: inline-block;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    display: none;
+}
+
+.form-overlay.open {
+    display: block;
+}
+
+
+.notes-container p {
+    text-align: center;
+}
+
+.notes-container {
+    margin-top: 40px;
+}
+
+/* .notes-archive {
+    border-color: red;
+} */
+
+.note {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.note-name {
+    font-weight: bold;
+}
+
+.note-content {
+    margin-top: 5px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: cornflowerblue;
+    margin-left: 15px;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.archive-button {
+    background-color: white;
+    margin-left: 15px;
+    color: black;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border: 1px solid red;
+    border-color: #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+    /* width: 100px; /* Tamaño fijo para el botón */
+    /* height: 30px;  */
+}
+
+.Unarchive-button {
+    background-color: green;
+    margin-left: 15px;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.no-notes-message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.line-with-text {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.line-with-text hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+
+.line-with-text p {
+    margin: 0;
+}
+
+.category {
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="navbar">
+            <div class="navbar-brand">Challenges Ensolvers</div>
+            <button id="open-form" class="navbar-button" onclick="scrollToTop()">Create Notes</button>
+        </div>
+        <div class="filterNotes" style="width: 50%; margin-left: 25%; margin-top: 70px;">
+            <select name="category" id="categoryFilter" onchange="filterNotes()">
+                <option value="all">All Categories</option>
+                <option value="category1">category1</option>
+                <option value="category2">category2</option>
+                <option value="category3">category3</option>
+            </select>
+        </div>
+        <div id="form-overlay" class="form-overlay"></div>
+
+        <div id="form-container" class="form-container">
+            <form action="/save" method="POST">
+                <input type="text" id="nombre" name="name" placeholder="Enter your name" required><br><br>
+                <textarea name="content" id="content" placeholder="Enter your content" required></textarea>
+                <div class="category">
+                    <p>Categories</p>
+                    <select name="category" id="category">
+                        <option value="category1">category1</option>
+                        <option value="category2">category2</option>
+                        <option value="category3">category3</option>
+                    </select>
+                </div>
+                <input type="submit" value="Save">
+                <button id="close-form" type="button">Close</button>
+            </form>
+        </div>
+
+        <div id="notes-container" class="notes-container"></div>
+
+        <div class="line-with-text">
+            <hr>
+            <p>Archive Notes</p>
+        </div>
+
+        <div id="notesArchiveContainer" class="notes-archive"></div>
+
+        <script src="/main.js"></script>
+
+    </div>
+</body>
+
+</html>
