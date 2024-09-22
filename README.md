@@ -1,10 +1,6 @@
 # CRUD Challenge
 
-I performed this exercise with the purpose of preparing myself for future technical interviews, considering that it is one of the recurring challenges in this type of evaluations. The task in question consists of the implementation of a CRUD system for the management of notes, which includes saving functionalities and a filter to facilitate the search.
-
-The technologies used in this project were: HTML, CSS, JavaScript, Node.js, Express, MySQL and Prisma. This choice of tools is aligned with common expectations in technical development environments. Besides being the technologies with which I have the most experience. 
-
-I also intend to carry out the same project, incorporating the React library, in order to deepen my skills in this technology widely used in modern web development.
+This challenge was designed to practice backend technologies and relational database management. The challenge consisted of developing a CRUD system for note management, incorporating storage functionalities and a filter to facilitate the search of saved notes.
 
 ## All the necessary components to run the application.
 
